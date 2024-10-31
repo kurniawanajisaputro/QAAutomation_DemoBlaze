@@ -30,7 +30,7 @@ https://drive.google.com/drive/folders/1qp_K92k-6d7-H_dtjRpuQa2yNwsH4nTE?usp=sha
 <p>3. run</p>
 
 ```
-Java -jar kurniawansqa-jar-with-dependencies.jar
+Java -jar KurniawanAdjiSaputroSoalAutomation-jar-with-dependencies.jar
 ```
 
   
