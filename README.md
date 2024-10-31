@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://socialify.git.ci/kurniawanajisaputro/Soal_Tes_Automation_PT.Akhdani-Reka-Solusi/image?font=Inter&language=1&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark" alt="project-image"></p>
 
-<p id="description">WEB UI Automation Testing for Siloam Website</p>
+<p id="description">WEB UI Automation Testing Website Demoblaze</p>
 
 <h2>Selenium Report:</h2>
 
