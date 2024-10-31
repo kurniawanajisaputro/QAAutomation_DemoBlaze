@@ -4,10 +4,6 @@
 
 <p id="description">WEB UI Automation Testing for Siloam Website</p>
 
-<h2>🚀 Demo</h2>
-
-[Demo Siloam Web Automation](https://youtu.be/gA4xHARZbVU)
-
 <h2>Selenium Report:</h2>
 
 <img src="Report1.JPG" alt="project-screenshot" width="500" height="500/">
