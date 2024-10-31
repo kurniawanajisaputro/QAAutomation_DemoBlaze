@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Soal Test Automation PT.Akhdani-Raka-Solusi</h1>
 
-<p align="center"><img src="https://socialify.git.ci/kurniawanajisaputro/SIloam_Web_Automation/image?language=1&name=1&owner=1&pattern=Brick%20Wall&stargazers=1&theme=Dark" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/kurniawanajisaputro/Soal_Test_Automation_PT_Akhdani_Raka_Solusi/image?language=1&name=1&owner=1&pattern=Brick%20Wall&stargazers=1&theme=Dark" alt="project-image"></p>
 
 <p id="description">WEB UI Automation Testing for Siloam Website</p>
 
