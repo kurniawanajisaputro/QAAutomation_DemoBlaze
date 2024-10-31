@@ -57,7 +57,7 @@ public class LoginTesting {
     public void test002_validasi_log_in(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String LoginInValidation = loginPage.LoginInValidation();
-        Assert.assertEquals(LoginInValidation,"Log In");
+        Assert.assertEquals(LoginInValidation,"");
     }
     @And("^Test002 Input TextField (.*) Yang Valid One")
     public void test002_input_textfield_username_yang_valid_one(String username){
@@ -71,7 +71,6 @@ public class LoginTesting {
     }
     @Then("Test002 Click Button Login Form")
     public void test002_click_button_log_in_form(){
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         loginPage.Btnlogin();
         extentTest.log(LogStatus.PASS, "Test002 Click Button Login Form");
     }

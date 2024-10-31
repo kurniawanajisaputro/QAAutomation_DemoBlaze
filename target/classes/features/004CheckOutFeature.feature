@@ -4,11 +4,13 @@ Feature: Checkout Website
     And Test007 Input TextField <name> Yang Valid One
     And Test007 Input TextField <country> Yang Valid Two
     And Test007 Input TextField <city> Yang Valid Three
-    And Test007 Input TextField <any> Yang Valid Four
-    And Test007 Input TextField <any> Yang Valid Five
-    And Test007 Input TextField <any> Yang Valid Six
+    And Test007 Input TextField <creditcard> Yang Valid Four
+    And Test007 Input TextField <month> Yang Valid Five
+    And Test007 Input TextField <year> Yang Valid Six
     And Test007 Click Button purchase
-    Then Test007 Klik Ok Pop Up
+    And Test007 Klik Ok Pop Up
+    And Test007 Validasi website
+    Then Test007 Click Button Log Out
 
     Examples:
       | name | country | city | creditcard | month | year |

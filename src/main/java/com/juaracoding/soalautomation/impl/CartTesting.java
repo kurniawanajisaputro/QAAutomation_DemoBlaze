@@ -25,6 +25,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import static com.juaracoding.soalautomation.util.GlobalFunction.delay;
+
 public class CartTesting {
     public WebDriver driver;
     private static ExtentTest extentTest;
@@ -47,7 +50,7 @@ public class CartTesting {
     public void test003_validasi_website(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String HomePageValidation = homePage.homePageValidation();
-        Assert.assertEquals(HomePageValidation,"nava");
+        Assert.assertEquals(HomePageValidation,"PRODUCT STORE");
     }
     @And("Test003 Membuka Item Samsung Galaxy S6")
     public void test003_membuka_item_samsung_galaxy_s6(){
@@ -63,17 +66,9 @@ public class CartTesting {
     }
     @Then("Test003 Klik Ok Pop Up")
     public void test003_klik_ok_pop_up() {
-        Alert alert = driver.switchTo().alert();
-
-        // Mendapatkan teks dari popup (opsional)
-        String alertText = alert.getText();
-        System.out.println("Popup text: " + alertText);
-
-        // Mengklik tombol "OK" pada popup
-        alert.accept();
-
-        extentTest.log(LogStatus.PASS, "");
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        delay(Constants.TIMEOUT_DELAY);
+        delay(3);
+        driver.switchTo().alert().accept();
     }
     @When("Test004 Click Button Home")
     public void test003_click_button_home(){
@@ -85,7 +80,7 @@ public class CartTesting {
     public void test004_validasi_website(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String HomePageValidation = homePage.homePageValidation();
-        Assert.assertEquals(HomePageValidation,"nava");
+        Assert.assertEquals(HomePageValidation,"PRODUCT STORE");
     }
     @And("Test004 Membuka Item Nokia Lumia 1520")
     public void test004_membuka_item_nokia_lumia_1520(){
@@ -101,17 +96,9 @@ public class CartTesting {
     }
     @Then("Test004 Klik Ok Pop Up")
     public void test004_klik_ok_pop_up() {
-        Alert alert = driver.switchTo().alert();
-
-        // Mendapatkan teks dari popup (opsional)
-        String alertText = alert.getText();
-        System.out.println("Popup text: " + alertText);
-
-        // Mengklik tombol "OK" pada popup
-        alert.accept();
-
-        extentTest.log(LogStatus.PASS, "");
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        delay(Constants.TIMEOUT_DELAY);
+        delay(3);
+        driver.switchTo().alert().accept();
     }
     @When("Test005 Click Button Home")
     public void test005_click_button_home(){
@@ -123,7 +110,7 @@ public class CartTesting {
     public void test005_validasi_website(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String HomePageValidation = homePage.homePageValidation();
-        Assert.assertEquals(HomePageValidation,"nava");
+        Assert.assertEquals(HomePageValidation,"PRODUCT STORE");
     }
     @And("Test005 Membuka Item Nexus6")
     public void test005_membuka_item_Nexus6(){
@@ -139,17 +126,9 @@ public class CartTesting {
     }
     @Then("Test005 Klik Ok Pop Up")
     public void test005_klik_ok_pop_up() {
-        Alert alert = driver.switchTo().alert();
-
-        // Mendapatkan teks dari popup (opsional)
-        String alertText = alert.getText();
-        System.out.println("Popup text: " + alertText);
-
-        // Mengklik tombol "OK" pada popup
-        alert.accept();
-
-        extentTest.log(LogStatus.PASS, "");
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        delay(Constants.TIMEOUT_DELAY);
+        delay(3);
+        driver.switchTo().alert().accept();
     }
     @When("Test006 Click Button Cart")
     public void test006_click_button_cart(){
@@ -161,7 +140,7 @@ public class CartTesting {
     public void test006_validasi_cart_page(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String CartPageValidation = cartPage.CartPageValidation();
-        Assert.assertEquals(CartPageValidation,"Product");
+        Assert.assertEquals(CartPageValidation,"Products");
     }
     @Then("Test006 Click Button Place Order")
     public void test006_click_button_place_order(){

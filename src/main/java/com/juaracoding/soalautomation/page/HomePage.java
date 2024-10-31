@@ -44,6 +44,8 @@ public class HomePage {
     @FindBy(xpath = "//a[normalize-space()='Nexus 6']")
     private WebElement btnNexus6;
 
+    @FindBy(xpath = "//a[@id='logout2']")
+    private WebElement btnLogOut;
 
     public HomePage() {
         this.driver= DriverSingleton.getDriver();
@@ -81,5 +83,8 @@ public class HomePage {
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnNexus6)).click();
     }
-
+    public void setBtnLogOut() {
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                .until(ExpectedConditions.visibilityOf(btnLogOut)).click();
+    }
 }

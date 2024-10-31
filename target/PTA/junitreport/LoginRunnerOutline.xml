@@ -1,38 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="80.988">
-    <testcase classname="SignUp Website" name="Test001 Signup Website (user)" time="34.315">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="168.628">
+    <testcase classname="SignUp Website" name="Test001 Signup Website (user)" time="37.211">
         <system-out><![CDATA[When Test001 Membuka Halaman Website........................................passed
 And Test001 Click Button SignUp.............................................passed
 And Test001 Validasi SignUp.................................................passed
-And Test001 Input TextField jajajakcvasdgsa Yang Valid One..................passed
+And Test001 Input TextField jajajakcvasdg847 Yang Valid One.................passed
 And Test001 Input TextField jajak4k4 Yang Valid Two.........................passed
 And Test001 Validasi Form Sign UP...........................................passed
 And Test001 Click Button SignUp Form........................................passed
 Then Test001 Pop Out Sign Up Berhasil.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="LogIn Website" name="Test002 LogIn Website (user)" time="43.011">
-        <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@onclick='login()']' (tried for 3 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[When Test002 Click Button Log In............................................passed
-And Test002 Input TextField jajajakcvasdgsa Yang Valid One..................passed
+    <testcase classname="LogIn Website" name="Test002 LogIn Website (user)" time="12.596">
+        <system-out><![CDATA[When Test002 Click Button Log In............................................passed
+And Test002 Validasi Log In.................................................passed
+And Test002 Input TextField jajajakcvasdg847 Yang Valid One.................passed
 And Test002 Input TextField jajak4k4 Yang Valid Two.........................passed
-Then Test002 Click Button Login Form........................................failed
+Then Test002 Click Button Login Form........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Cart Website" name="Test003 Cart Samsung Galaxy S6" time="16.104">
+        <system-out><![CDATA[When Test003 Validasi website...............................................passed
+And Test003 Membuka Item Samsung Galaxy S6..................................passed
+And Test003 Click Button Add To Cart........................................passed
+Then Test003 Klik Ok Pop Up.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Cart Website" name="Test004 Cart Nokia Lumia 1520" time="19.719">
+        <system-out><![CDATA[When Test004 Click Button Home..............................................passed
+And Test004 Validasi website................................................passed
+And Test004 Membuka Item Nokia Lumia 1520...................................passed
+And Test004 Click Button Add To Cart........................................passed
+Then Test004 Klik Ok Pop Up.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Cart Website" name="Test005 Cart Nexus6" time="19.639">
+        <system-out><![CDATA[When Test005 Click Button Home..............................................passed
+And Test005 Validasi website................................................passed
+And Test005 Membuka Item Nexus6.............................................passed
+And Test005 Click Button Add To Cart........................................passed
+Then Test005 Klik Ok Pop Up.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Cart Website" name="Test006 Cart Item" time="9.92">
+        <system-out><![CDATA[When Test006 Click Button Cart..............................................passed
+And Test006 Validasi Cart Page..............................................passed
+Then Test006 Click Button Place Order.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Checkout Website" name="Test007 Checkout Item" time="49.425">
+        <failure message="no such alert&#10;  (Session info: chrome=130.0.6723.92)&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ff98dd73bf101ba109b8940df8ff6b1e, getAlertText {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62427}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62427/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ff98dd73bf101ba109b8940df8ff6b1e" type="org.openqa.selenium.NoAlertPresentException"><![CDATA[When Test007 Validasi CheckOut Page.........................................passed
+And Test007 Input TextField budi Yang Valid One.............................passed
+And Test007 Input TextField indonesia Yang Valid Two........................passed
+And Test007 Input TextField banyumas Yang Valid Three.......................passed
+And Test007 Input TextField 55612345 Yang Valid Four........................passed
+And Test007 Input TextField March Yang Valid Five...........................passed
+And Test007 Input TextField 2024 Yang Valid Six.............................passed
+And Test007 Click Button purchase...........................................passed
+And Test007 Klik Ok Pop Up..................................................failed
+And Test007 Validasi website................................................skipped
+Then Test007 Click Button Log Out...........................................skipped
 
 StackTrace:
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@onclick='login()']' (tried for 3 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.juaracoding.soalautomation.page.LoginPage.Btnlogin(LoginPage.java:73)
-	at com.juaracoding.soalautomation.impl.LoginTesting.test002_click_button_log_in_form(LoginTesting.java:75)
-	at ✽.Test002 Click Button Login Form(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/002LoginFeature.feature:6)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@onclick='login()']"}
+org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=130.0.6723.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3e91cd8bca665af46faaade3fccbbe4a, findElement {using=xpath, value=//button[@onclick='login()']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59147/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3e91cd8bca665af46faaade3fccbbe4a
+Command: [ff98dd73bf101ba109b8940df8ff6b1e, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62427}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62427/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff98dd73bf101ba109b8940df8ff6b1e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,68 +82,11 @@ Session ID: 3e91cd8bca665af46faaade3fccbbe4a
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.juaracoding.soalautomation.page.LoginPage.Btnlogin(LoginPage.java:73)
-	at com.juaracoding.soalautomation.impl.LoginTesting.test002_click_button_log_in_form(LoginTesting.java:75)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1163)
+	at com.juaracoding.soalautomation.impl.CheckOutTesting.test007_klik_ok_pop_up(CheckOutTesting.java:100)
+	at ✽.Test007 Klik Ok Pop Up(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/004CheckOutFeature.feature:11)
 ]]></failure>
     </testcase>
 </testsuite>

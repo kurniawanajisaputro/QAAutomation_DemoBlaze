@@ -40,7 +40,7 @@ public class CheckoutPage {
     private WebElement txtFieldMonth;
     @FindBy(id = "year")
     private WebElement txtFieldYear;
-    @FindBy(css = "btn btn-primary")
+    @FindBy(xpath = "//button[text()='Purchase']")
     private WebElement btnPurchase;
     @FindBy(css = "btn btn-secondary")
     private WebElement btnCancel;

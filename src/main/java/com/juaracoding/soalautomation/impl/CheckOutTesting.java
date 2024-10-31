@@ -25,6 +25,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import static com.juaracoding.soalautomation.util.GlobalFunction.delay;
+
 public class CheckOutTesting {
     public WebDriver driver;
     private static ExtentTest extentTest;
@@ -90,18 +93,22 @@ public class CheckOutTesting {
         checkoutPage.SetBtnPurchase();
         extentTest.log(LogStatus.PASS, "Test007 Click Button Purchase");
     }
-    @Then("Test007 Klik Ok Pop Up")
+    @And("Test007 Klik Ok Pop Up")
     public void test007_klik_ok_pop_up() {
-        Alert alert = driver.switchTo().alert();
-
-        // Mendapatkan teks dari popup (opsional)
-        String alertText = alert.getText();
-        System.out.println("Popup text: " + alertText);
-
-        // Mengklik tombol "OK" pada popup
-        alert.accept();
-
-        extentTest.log(LogStatus.PASS, "Thank you for your purchase!");
+        delay(Constants.TIMEOUT_DELAY);
+        delay(3);
+        driver.switchTo().alert().accept();
+    }
+    @And("Test007 Validasi website")
+    public void test007_validasi_website(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        String HomePageValidation = homePage.homePageValidation();
+        Assert.assertEquals(HomePageValidation,"PRODUCT STORE");
+    }
+    @Then("Test007 Click Button Log Out")
+    public void test007_click_button_log_out(){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        homePage.setBtnLogOut();;
+        extentTest.log(LogStatus.PASS, "Test007 Click Button Log Out");
     }
 }
