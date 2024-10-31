@@ -13,6 +13,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = {
                 "src/main/resources/features/001SignUpFeature.feature",
+                "src/main/resources/features/002LoginFeature.feature",
+//                "src/main/resources/features/003CartFeature.feature",
+//                "src/main/resources/features/004CheckOutFeature.feature",
         },
         glue = "com.juaracoding.soalautomation.impl",
         monochrome=true,

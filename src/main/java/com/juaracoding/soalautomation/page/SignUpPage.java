@@ -33,10 +33,10 @@ public class SignUpPage {
     @FindBy(id = "message-text")
     private WebElement validasiform;
 
-    @FindBy(css = "button.btn.btn-primary[onclick='send()']")
+    @FindBy(xpath = "//button[@onclick='register()']")
     private WebElement btnSignUp;
 
-    @FindBy(css = ".btn.btn-secondary")
+    @FindBy(css = "btn btn-secondary")
     private WebElement btnCansel;
 
     @FindBy(css = "button.btn.btn-primary[onclick='send()']")

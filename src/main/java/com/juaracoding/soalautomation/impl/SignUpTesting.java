@@ -19,10 +19,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import org.openqa.selenium.NoAlertPresentException;
 
 public class SignUpTesting {
     public WebDriver driver;
@@ -83,6 +85,28 @@ public class SignUpTesting {
         signUpPage.BtnsignUp();
         extentTest.log(LogStatus.PASS, "Test001 Click Button SignUp");
     }
+//    @And("Test001 Pop Out Sign Up Berhasil")
+//    public void test001_pop_out_sign_up_berhasil(){
+////        Alert alert = driver.switchTo().alert();
+////
+////        // Mendapatkan teks dari popup (opsional)
+////        String alertText = alert.getText();
+////        System.out.println("Popup text: " + alertText);
+////        // Mengklik tombol "OK" pada popup
+////        alert.accept();
+////        extentTest.log(LogStatus.PASS, "Sign Up Succesful");
+////        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+//        try {
+//            Alert alert = driver.switchTo().alert();
+//            String alertText = alert.getText();
+//            System.out.println("Popup text: " + alertText);
+//            alert.accept();
+//            extentTest.log(LogStatus.PASS, "Sign Up Successful");
+//            GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+//        } catch (NoAlertPresentException e) {
+//            System.out.println("No alert found: " + e.getMessage());
+//        }
+//    }
     @Then("Test001 Validasi website")
     public void test001_validasi_website(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);

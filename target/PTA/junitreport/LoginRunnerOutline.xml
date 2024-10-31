@@ -1,27 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.604">
-    <testcase classname="SignUp Website" name="Test001 Signup Website (user)" time="25.803">
-        <failure message="Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (ed0449fc3df56fb8c6d5d27b5598eb14)] -&gt; css selector: button.btn.btn-primary[onclick='send()']] (tried for 2 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51435}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51435/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ed0449fc3df56fb8c6d5d27b5598eb14" type="org.openqa.selenium.TimeoutException"><![CDATA[When Test001 Membuka Halaman Website........................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="39.046">
+    <testcase classname="SignUp Website" name="Test001 Signup Website (user)" time="32.056">
+        <system-out><![CDATA[When Test001 Membuka Halaman Website........................................passed
 And Test001 Click Button SignUp.............................................passed
 And Test001 Validasi SignUp.................................................passed
-And Test001 Input TextField jajajakakaka Yang Valid One.....................passed
-And Test001 Input TextField jajakiki Yang Valid Two.........................passed
+And Test001 Input TextField jajajakvvvvv Yang Valid One.....................passed
+And Test001 Input TextField jajak4k4 Yang Valid Two.........................passed
 And Test001 Validasi Form Sign UP...........................................passed
-And Test001 Click Button SignUp Form........................................failed
-Then Test001 Validasi website...............................................skipped
+Then Test001 Click Button SignUp Form.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="LogIn Website" name="Test002 LogIn Website (user)" time="3.459">
+        <failure message="unexpected alert open: {Alert text : Sign up successful.}&#10;  (Session info: chrome=130.0.6723.92): Sign up successful.&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [26ad77b3f64d10b5abf56427f6fe7b6b, findElement {using=xpath, value=//a[@id='nava']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52609/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 26ad77b3f64d10b5abf56427f6fe7b6b" type="org.openqa.selenium.UnhandledAlertException"><![CDATA[When Test002 Pop Out Sign Up Berhasil.......................................passed
+And Test002 Validasi website................................................failed
+And Test002 Click Button Log In.............................................skipped
+And Test002 Input TextField <any> Yang Valid One............................skipped
+And Test002 Input TextField <any> Yang Valid Two............................skipped
+Then Test002 Click Button Login Form........................................skipped
 
 StackTrace:
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (ed0449fc3df56fb8c6d5d27b5598eb14)] -> css selector: button.btn.btn-primary[onclick='send()']] (tried for 2 second(s) with 500 milliseconds interval)
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Sign up successful.}
+  (Session info: chrome=130.0.6723.92): Sign up successful.
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51435}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51435/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed0449fc3df56fb8c6d5d27b5598eb14
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.juaracoding.soalautomation.page.SignUpPage.BtnsignUp(SignUpPage.java:74)
-	at com.juaracoding.soalautomation.impl.SignUpTesting.test001_click_button_signup(SignUpTesting.java:83)
-	at ✽.Test001 Click Button SignUp Form(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/001SignUpFeature.feature:9)
+Command: [26ad77b3f64d10b5abf56427f6fe7b6b, findElement {using=xpath, value=//a[@id='nava']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52609/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26ad77b3f64d10b5abf56427f6fe7b6b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at com.juaracoding.soalautomation.page.HomePage.homePageValidation(HomePage.java:59)
+	at com.juaracoding.soalautomation.impl.LoginTesting.test002_validasi_website(LoginTesting.java:68)
+	at ✽.Test002 Validasi website(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/002LoginFeature.feature:4)
 ]]></failure>
     </testcase>
 </testsuite>

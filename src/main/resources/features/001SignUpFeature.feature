@@ -6,9 +6,10 @@ Feature: SignUp Website
     And Test001 Input TextField <username> Yang Valid One
     And Test001 Input TextField <password> Yang Valid Two
     And Test001 Validasi Form Sign UP
-    And Test001 Click Button SignUp Form
-    Then Test001 Validasi website
+    Then Test001 Click Button SignUp Form
+#    Then Test001 Pop Out Sign Up Berhasil
+#    Then Test001 Validasi website
 
     Examples:
       | username | password |
-      | jajajakakaka | jajakiki |
+      | jajajakvvvvv | jajak4k4 |

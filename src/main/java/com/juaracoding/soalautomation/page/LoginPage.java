@@ -30,7 +30,7 @@ public class LoginPage {
     @FindBy(id = "sign-password")
     private WebElement txtFieldPassword;
 
-    @FindBy(css = "btn btn-primary")
+    @FindBy(xpath = "//button[@onclick='login()']")
     private WebElement btnLogin;
 
     @FindBy(xpath = "btn btn-secondary")
