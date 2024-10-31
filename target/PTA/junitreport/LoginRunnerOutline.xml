@@ -1,75 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="168.628">
-    <testcase classname="SignUp Website" name="Test001 Signup Website (user)" time="37.211">
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="83.824">
+    <testcase classname="SignUp Website" name="Test001 Signup Website (user)" time="36.709">
         <system-out><![CDATA[When Test001 Membuka Halaman Website........................................passed
 And Test001 Click Button SignUp.............................................passed
 And Test001 Validasi SignUp.................................................passed
-And Test001 Input TextField jajajakcvasdg847 Yang Valid One.................passed
+And Test001 Input TextField jajajakcvasdg777779 Yang Valid One..............passed
 And Test001 Input TextField jajak4k4 Yang Valid Two.........................passed
 And Test001 Validasi Form Sign UP...........................................passed
 And Test001 Click Button SignUp Form........................................passed
 Then Test001 Pop Out Sign Up Berhasil.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="LogIn Website" name="Test002 LogIn Website (user)" time="12.596">
+    <testcase classname="LogIn Website" name="Test002 LogIn Website (user)" time="12.555">
         <system-out><![CDATA[When Test002 Click Button Log In............................................passed
 And Test002 Validasi Log In.................................................passed
-And Test002 Input TextField jajajakcvasdg847 Yang Valid One.................passed
+And Test002 Input TextField jajajakcvasdg777779 Yang Valid One..............passed
 And Test002 Input TextField jajak4k4 Yang Valid Two.........................passed
 Then Test002 Click Button Login Form........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Cart Website" name="Test003 Cart Samsung Galaxy S6" time="16.104">
-        <system-out><![CDATA[When Test003 Validasi website...............................................passed
-And Test003 Membuka Item Samsung Galaxy S6..................................passed
-And Test003 Click Button Add To Cart........................................passed
-Then Test003 Klik Ok Pop Up.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Cart Website" name="Test004 Cart Nokia Lumia 1520" time="19.719">
-        <system-out><![CDATA[When Test004 Click Button Home..............................................passed
-And Test004 Validasi website................................................passed
-And Test004 Membuka Item Nokia Lumia 1520...................................passed
-And Test004 Click Button Add To Cart........................................passed
-Then Test004 Klik Ok Pop Up.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Cart Website" name="Test005 Cart Nexus6" time="19.639">
-        <system-out><![CDATA[When Test005 Click Button Home..............................................passed
-And Test005 Validasi website................................................passed
-And Test005 Membuka Item Nexus6.............................................passed
-And Test005 Click Button Add To Cart........................................passed
-Then Test005 Klik Ok Pop Up.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Cart Website" name="Test006 Cart Item" time="9.92">
-        <system-out><![CDATA[When Test006 Click Button Cart..............................................passed
-And Test006 Validasi Cart Page..............................................passed
-Then Test006 Click Button Place Order.......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Checkout Website" name="Test007 Checkout Item" time="49.425">
-        <failure message="no such alert&#10;  (Session info: chrome=130.0.6723.92)&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ff98dd73bf101ba109b8940df8ff6b1e, getAlertText {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62427}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62427/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ff98dd73bf101ba109b8940df8ff6b1e" type="org.openqa.selenium.NoAlertPresentException"><![CDATA[When Test007 Validasi CheckOut Page.........................................passed
-And Test007 Input TextField budi Yang Valid One.............................passed
-And Test007 Input TextField indonesia Yang Valid Two........................passed
-And Test007 Input TextField banyumas Yang Valid Three.......................passed
-And Test007 Input TextField 55612345 Yang Valid Four........................passed
-And Test007 Input TextField March Yang Valid Five...........................passed
-And Test007 Input TextField 2024 Yang Valid Six.............................passed
-And Test007 Click Button purchase...........................................passed
-And Test007 Klik Ok Pop Up..................................................failed
-And Test007 Validasi website................................................skipped
-Then Test007 Click Button Log Out...........................................skipped
+    <testcase classname="Cart Website" name="Test003 Cart Samsung Galaxy S6" time="3.715">
+        <failure message="unexpected alert open: {Alert text : User does not exist.}&#10;  (Session info: chrome=130.0.6723.92): User does not exist.&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6620f8f3aa088ee1244b99544fcb7077, findElement {value=//a[@id='nava'], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64392/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6620f8f3aa088ee1244b99544fcb7077" type="org.openqa.selenium.UnhandledAlertException"><![CDATA[When Test003 Validasi website...............................................failed
+And Test003 Membuka Item Samsung Galaxy S6..................................skipped
+And Test003 Click Button Add To Cart........................................skipped
+Then Test003 Klik Ok Pop Up.................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoAlertPresentException: no such alert
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=130.0.6723.92): User does not exist.
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6620f8f3aa088ee1244b99544fcb7077, findElement {value=//a[@id='nava'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64392/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6620f8f3aa088ee1244b99544fcb7077
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.juaracoding.soalautomation.page.HomePage.homePageValidation(HomePage.java:61)
+	at com.juaracoding.soalautomation.impl.CartTesting.test003_validasi_website(CartTesting.java:52)
+	at ✽.Test003 Validasi website(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/003CartFeature.feature:3)
+]]></failure>
+    </testcase>
+    <testcase classname="Cart Website" name="Test004 Cart Nokia Lumia 1520" time="4.355">
+        <failure message="element click intercepted: Element &lt;a class=&quot;nav-link&quot; href=&quot;index.html&quot;&gt;...&lt;/a&gt; is not clickable at point (865, 37). Other element would receive the click: &lt;div class=&quot;modal-header&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=130.0.6723.92)&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6620f8f3aa088ee1244b99544fcb7077, clickElement {id=f.79DC775009CF74B632EB6740EE009FE3.d.CC98061A3499600B33493E181DC143A8.e.107}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64392/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (6620f8f3aa088ee1244b99544fcb7077)] -&gt; xpath: //li[@class='nav-item active']//a[@class='nav-link']]&#10;Session ID: 6620f8f3aa088ee1244b99544fcb7077" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When Test004 Click Button Home..............................................failed
+And Test004 Validasi website................................................skipped
+And Test004 Membuka Item Nokia Lumia 1520...................................skipped
+And Test004 Click Button Add To Cart........................................skipped
+Then Test004 Klik Ok Pop Up.................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="index.html">...</a> is not clickable at point (865, 37). Other element would receive the click: <div class="modal-header">...</div>
   (Session info: chrome=130.0.6723.92)
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff98dd73bf101ba109b8940df8ff6b1e, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62427}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62427/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ff98dd73bf101ba109b8940df8ff6b1e
+Command: [6620f8f3aa088ee1244b99544fcb7077, clickElement {id=f.79DC775009CF74B632EB6740EE009FE3.d.CC98061A3499600B33493E181DC143A8.e.107}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64392/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6620f8f3aa088ee1244b99544fcb7077)] -> xpath: //li[@class='nav-item active']//a[@class='nav-link']]
+Session ID: 6620f8f3aa088ee1244b99544fcb7077
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -82,11 +81,131 @@ Session ID: ff98dd73bf101ba109b8940df8ff6b1e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1163)
-	at com.juaracoding.soalautomation.impl.CheckOutTesting.test007_klik_ok_pop_up(CheckOutTesting.java:100)
-	at ✽.Test007 Klik Ok Pop Up(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/004CheckOutFeature.feature:11)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.juaracoding.soalautomation.page.ItemPage.SetBtnHome(ItemPage.java:56)
+	at com.juaracoding.soalautomation.impl.CartTesting.test003_click_button_home(CartTesting.java:76)
+	at ✽.Test004 Click Button Home(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/003CartFeature.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="Cart Website" name="Test005 Cart Nexus6" time="4.41">
+        <failure message="element click intercepted: Element &lt;a class=&quot;nav-link&quot; href=&quot;index.html&quot;&gt;...&lt;/a&gt; is not clickable at point (865, 37). Other element would receive the click: &lt;div class=&quot;modal-header&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=130.0.6723.92)&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6620f8f3aa088ee1244b99544fcb7077, clickElement {id=f.79DC775009CF74B632EB6740EE009FE3.d.CC98061A3499600B33493E181DC143A8.e.107}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64392/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (6620f8f3aa088ee1244b99544fcb7077)] -&gt; xpath: //li[@class='nav-item active']//a[@class='nav-link']]&#10;Session ID: 6620f8f3aa088ee1244b99544fcb7077" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When Test005 Click Button Home..............................................failed
+And Test005 Validasi website................................................skipped
+And Test005 Membuka Item Nexus6.............................................skipped
+And Test005 Click Button Add To Cart........................................skipped
+Then Test005 Klik Ok Pop Up.................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="index.html">...</a> is not clickable at point (865, 37). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=130.0.6723.92)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6620f8f3aa088ee1244b99544fcb7077, clickElement {id=f.79DC775009CF74B632EB6740EE009FE3.d.CC98061A3499600B33493E181DC143A8.e.107}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64392/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6620f8f3aa088ee1244b99544fcb7077)] -> xpath: //li[@class='nav-item active']//a[@class='nav-link']]
+Session ID: 6620f8f3aa088ee1244b99544fcb7077
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.juaracoding.soalautomation.page.ItemPage.SetBtnHome(ItemPage.java:56)
+	at com.juaracoding.soalautomation.impl.CartTesting.test005_click_button_home(CartTesting.java:106)
+	at ✽.Test005 Click Button Home(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/003CartFeature.feature:16)
+]]></failure>
+    </testcase>
+    <testcase classname="Cart Website" name="Test006 Cart Item" time="4.409">
+        <failure message="element click intercepted: Element &lt;a class=&quot;nav-link&quot; id=&quot;cartur&quot; href=&quot;cart.html&quot;&gt;...&lt;/a&gt; is not clickable at point (1068, 37). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;logInModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;logInModalLabel&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=130.0.6723.92)&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6620f8f3aa088ee1244b99544fcb7077, clickElement {id=f.79DC775009CF74B632EB6740EE009FE3.d.CC98061A3499600B33493E181DC143A8.e.108}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64392/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (6620f8f3aa088ee1244b99544fcb7077)] -&gt; xpath: //a[@id='cartur']]&#10;Session ID: 6620f8f3aa088ee1244b99544fcb7077" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When Test006 Click Button Cart..............................................failed
+And Test006 Validasi Cart Page..............................................skipped
+Then Test006 Click Button Place Order.......................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" id="cartur" href="cart.html">...</a> is not clickable at point (1068, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=130.0.6723.92)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6620f8f3aa088ee1244b99544fcb7077, clickElement {id=f.79DC775009CF74B632EB6740EE009FE3.d.CC98061A3499600B33493E181DC143A8.e.108}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64392}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64392/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6620f8f3aa088ee1244b99544fcb7077)] -> xpath: //a[@id='cartur']]
+Session ID: 6620f8f3aa088ee1244b99544fcb7077
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.juaracoding.soalautomation.page.ItemPage.SetBtnCart(ItemPage.java:60)
+	at com.juaracoding.soalautomation.impl.CartTesting.test006_click_button_cart(CartTesting.java:136)
+	at ✽.Test006 Click Button Cart(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/003CartFeature.feature:23)
+]]></failure>
+    </testcase>
+    <testcase classname="Checkout Website" name="Test007 Checkout Item" time="13.991">
+        <failure message="Unable to find element with locator By.id: orderModalLabel&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When Test007 Validasi CheckOut Page.........................................failed
+And Test007 Input TextField budi Yang Valid One.............................skipped
+And Test007 Input TextField indonesia Yang Valid Two........................skipped
+And Test007 Input TextField banyumas Yang Valid Three.......................skipped
+And Test007 Input TextField 55612345 Yang Valid Four........................skipped
+And Test007 Input TextField March Yang Valid Five...........................skipped
+And Test007 Input TextField 2024 Yang Valid Six.............................skipped
+And Test007 Click Button purchase...........................................skipped
+And Test007 Validasi Check Out Form.........................................skipped
+And Test007 Click Button Ok.................................................skipped
+And Test007 Validasi website................................................skipped
+Then Test007 Click Button Log Out...........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: orderModalLabel
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.juaracoding.soalautomation.page.CheckoutPage.CheckOutPageValidation(CheckoutPage.java:68)
+	at com.juaracoding.soalautomation.impl.CheckOutTesting.test007_validasi_checkout_page(CheckOutTesting.java:51)
+	at ✽.Test007 Validasi CheckOut Page(file:///D:/Bootcamp%20SQA%20Juara%20Koding/SoalTestAutomation/src/main/resources/features/004CheckOutFeature.feature:3)
 ]]></failure>
     </testcase>
 </testsuite>

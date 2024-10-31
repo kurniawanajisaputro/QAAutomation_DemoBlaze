@@ -8,7 +8,8 @@ Feature: Checkout Website
     And Test007 Input TextField <month> Yang Valid Five
     And Test007 Input TextField <year> Yang Valid Six
     And Test007 Click Button purchase
-    And Test007 Klik Ok Pop Up
+    And Test007 Validasi Check Out Form
+    And Test007 Click Button Ok
     And Test007 Validasi website
     Then Test007 Click Button Log Out
 

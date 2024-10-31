@@ -11,5 +11,7 @@ public class Constants {
 	public static final String OPERA = "Opera";
 	public static final String IE = "IE";
 	public static final String SAFARI = "Safari";
+
+	public static final String USERNAME = "VALID";
 	public static final String URL_LOGIN = "https://www.demoblaze.com/";
 }

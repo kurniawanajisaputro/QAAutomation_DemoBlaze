@@ -48,9 +48,11 @@ public class CheckoutPage {
     @FindBy(css = "sweet-alert  showSweetAlert visible")
     private WebElement CheckoutBerhasil;
 
-    @FindBy(css = "confirm btn btn-lg btn-primary")
+    @FindBy(xpath = "//button[text()='OK']")
     private WebElement btnOK;
 
+    @FindBy(xpath = "//body[@class='modal-open stop-scrolling']")
+    private WebElement ValidasiCheckout;
 
     public CheckoutPage() {
         this.driver= DriverSingleton.getDriver();
@@ -65,7 +67,10 @@ public class CheckoutPage {
     public String CheckOutPageValidation(){
         return Placeorder==null?"":Placeorder.getText();
     }
-
+    public void ModelCheckOut(){
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                .until(ExpectedConditions.visibilityOf(ValidasiCheckout)).click();
+    }
     public void SetTxtinputName(String name){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
@@ -128,7 +133,7 @@ public class CheckoutPage {
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnCancel)).click();
     }
-    public void OK(){
+    public void SetBtnOK(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnOK)).click();
     }

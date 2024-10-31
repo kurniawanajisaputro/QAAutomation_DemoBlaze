@@ -14,6 +14,7 @@ import com.juaracoding.soalautomation.page.CheckoutPage;
 import com.juaracoding.soalautomation.page.LoginPage;
 import com.juaracoding.soalautomation.page.ItemPage;
 import com.juaracoding.soalautomation.page.HomePage;
+import com.juaracoding.soalautomation.util.DataGenerator;
 import com.juaracoding.soalautomation.util.GlobalFunction;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -26,6 +27,8 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.NoAlertPresentException;
 
+import java.util.Random;
+
 import static com.juaracoding.soalautomation.util.GlobalFunction.delay;
 
 public class SignUpTesting {
@@ -37,6 +40,10 @@ public class SignUpTesting {
     private ItemPage itemPage;
     private LoginPage loginPage;
     private SignUpPage signUpPage;
+
+    private DataGenerator dataGenerator = new DataGenerator();
+    private Random r = new Random();
+    public String userName;
 
     public SignUpTesting(){
         this.driver = LoginOutlineHooks.driver;
@@ -65,8 +72,8 @@ public class SignUpTesting {
     }
     @And("^Test001 Input TextField (.*) Yang Valid One")
     public void test001_input_textfield_username_yang_valid_one(String username){
-        delay(Constants.TIMEOUT_DELAY);
-        signUpPage.setTxtUsername(username);
+        userName = String.valueOf(r.nextLong(10000000000000L,99999999999999L));
+        signUpPage.setTxtUsername(userName);
         extentTest.log(LogStatus.PASS, "Test001 Input TextField <username> Yang Valid One");
     }
     @And("^Test001 Input TextField (.*) Yang Valid Two")

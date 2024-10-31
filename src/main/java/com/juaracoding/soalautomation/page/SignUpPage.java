@@ -64,6 +64,7 @@ public class SignUpPage {
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                     .until(ExpectedConditions.visibilityOf(txtFieldUsername)).sendKeys(username);
     }
+
     public void setTxtPassword(String password){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))

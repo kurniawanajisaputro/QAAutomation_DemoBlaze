@@ -12,4 +12,4 @@ Feature: SignUp Website
 
     Examples:
       | username | password |
-      | jajajakcvasdg847 | jajak4k4 |
+      | jajajakcvasdg777779 | jajak4k4 |

@@ -93,11 +93,17 @@ public class CheckOutTesting {
         checkoutPage.SetBtnPurchase();
         extentTest.log(LogStatus.PASS, "Test007 Click Button Purchase");
     }
-    @And("Test007 Klik Ok Pop Up")
-    public void test007_klik_ok_pop_up() {
-        delay(Constants.TIMEOUT_DELAY);
-        delay(3);
-        driver.switchTo().alert().accept();
+    @And("Test007 Validasi Check Out Form")
+    public void test007_validasi_check_out_form(){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.ModelCheckOut();
+        extentTest.log(LogStatus.PASS, "Test007 Validasi Check Out Form");
+    }
+    @And("Test007 Click Button Ok")
+    public void test007_click_button_ok_() {
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.SetBtnOK();
+        extentTest.log(LogStatus.PASS, "Test007 Click Button OK");
     }
     @And("Test007 Validasi website")
     public void test007_validasi_website(){
