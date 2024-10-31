@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="48.946">
+    <testcase classname="SignUp Website" name="Test001 Signup Website (user)" time="44.361">
+        <failure message="Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (1ba376d75a10c9d54d2f790e25ed7f69)] -&gt; css selector: button.btn.btn-primary[onclick='send()']] (tried for 4 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.19.1', revision: 'abe0ee07dc'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59193}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59193/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1ba376d75a10c9d54d2f790e25ed7f69" type="org.openqa.selenium.TimeoutException"><![CDATA[When Test001 Membuka Halaman Website........................................passed
+And Test001 Click Button SignUp.............................................passed
+And Test001 Validasi SignUp.................................................passed
+And Test001 Input TextField jajajakakaka Yang Valid One.....................passed
+And Test001 Input TextField jajakiki Yang Valid Two.........................passed
+And Test001 Validasi Form Sign UP...........................................passed
+And Test001 Click Button SignUp Form........................................failed
+Then Test001 Validasi website...............................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (1ba376d75a10c9d54d2f790e25ed7f69)] -> css selector: button.btn.btn-primary[onclick='send()']] (tried for 4 second(s) with 500 milliseconds interval)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\MSI\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59193}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59193/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ba376d75a10c9d54d2f790e25ed7f69
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.juaracoding.soalautomation.page.SignUpPage.BtnSignUp(SignUpPage.java:74)
+	at com.juaracoding.soalautomation.impl.SignUpTesting.test001_click_button_signup(SignUpTesting.java:83)
+	at ✽.Test001 Click Button SignUp Form(file:///D:/Bootcamp%20SQA%20Juara%20Koding/Template/src/main/resources/features/001SignUpFeature.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>

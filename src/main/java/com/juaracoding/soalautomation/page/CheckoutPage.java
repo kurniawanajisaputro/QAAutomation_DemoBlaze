@@ -1,0 +1,135 @@
+package com.juaracoding.soalautomation.page;/*
+IntelliJ IDEA 2023.3.6 (Community Edition)
+Build #IC-223.8214.52, built on March 21, 2024
+@Author MSI a.k.a. Kurniawan Adji Saputro
+Java Developer
+Created on 30/10/2024 19:24
+@Last Modified 30/10/2024 19:24
+Version 1.0
+*/
+import com.juaracoding.soalautomation.connection.Constants;
+import com.juaracoding.soalautomation.connection.DriverSingleton;
+import com.juaracoding.soalautomation.util.GlobalFunction;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+public class CheckoutPage {
+    private WebDriver driver;
+
+    @FindBy(id = "orderModalLabel")
+    private WebElement Placeorder;
+
+    @FindBy(id = "name")
+    private WebElement txtFieldName;
+
+    @FindBy(id = "country")
+    private WebElement txtFieldCountry;
+
+    @FindBy(id = "city")
+    private WebElement txtFieldCity;
+
+    @FindBy(id = "card")
+    private WebElement txtFieldCard;
+
+    @FindBy(id = "month")
+    private WebElement txtFieldMonth;
+    @FindBy(id = "year")
+    private WebElement txtFieldYear;
+    @FindBy(css = "btn btn-primary")
+    private WebElement btnPurchase;
+    @FindBy(css = "btn btn-secondary")
+    private WebElement btnCancel;
+
+    @FindBy(css = "sweet-alert  showSweetAlert visible")
+    private WebElement CheckoutBerhasil;
+
+    @FindBy(css = "confirm btn btn-lg btn-primary")
+    private WebElement btnOK;
+
+
+    public CheckoutPage() {
+        this.driver= DriverSingleton.getDriver();
+        PageFactory.initElements(driver,this);
+    }
+
+    public CheckoutPage(WebDriver driver) {
+        this.driver= driver;
+        PageFactory.initElements(driver,this);
+    }
+
+    public String CheckOutPageValidation(){
+        return Placeorder==null?"":Placeorder.getText();
+    }
+
+    public void inputName(String name){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        try{
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(txtFieldName)).sendKeys(name);
+        }catch (Exception e){
+            System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
+        }
+    }
+    public void inputCountry(String country){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        try{
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(txtFieldCountry)).sendKeys(country);
+        }catch (Exception e){
+            System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
+        }
+    }
+    public void inputCity(String city){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        try{
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(txtFieldCity)).sendKeys(city);
+        }catch (Exception e){
+            System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
+        }
+    }
+    public void inputCard(String card){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        try{
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(txtFieldCard)).sendKeys(card);
+        }catch (Exception e){
+            System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
+        }
+    }
+    public void inputMonth(String month){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        try{
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(txtFieldMonth)).sendKeys(month);
+        }catch (Exception e){
+            System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
+        }
+    }
+    public void inputYear(String year){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        try{
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(txtFieldYear)).sendKeys(year);
+        }catch (Exception e){
+            System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
+        }
+    }
+    public void Purchase(){
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                .until(ExpectedConditions.visibilityOf(btnPurchase)).click();
+    }
+    public void Cancel(){
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                .until(ExpectedConditions.visibilityOf(btnCancel)).click();
+    }
+    public void OK(){
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                .until(ExpectedConditions.visibilityOf(btnOK)).click();
+    }
+}
