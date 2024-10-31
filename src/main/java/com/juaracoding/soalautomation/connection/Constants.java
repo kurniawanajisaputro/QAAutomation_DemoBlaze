@@ -12,6 +12,16 @@ public class Constants {
 	public static final String IE = "IE";
 	public static final String SAFARI = "Safari";
 
-	public static final String USERNAME = "VALID";
+	public class UserData {
+		private static String username;
+
+		public static void setUsername(String user) {
+			username = user;
+		}
+
+		public static String getUsername() {
+			return username;
+		}
+	}
 	public static final String URL_LOGIN = "https://www.demoblaze.com/";
 }

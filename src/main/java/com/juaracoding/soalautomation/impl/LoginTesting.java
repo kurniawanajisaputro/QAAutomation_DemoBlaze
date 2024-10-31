@@ -38,22 +38,13 @@ public class LoginTesting {
     private ItemPage itemPage;
     private LoginPage loginPage;
     private SignUpPage signUpPage;
-    private DataGenerator dataGenerator = new DataGenerator();
-    private Random r = new Random();
-    public String userName;
+    public String Username;
     public LoginTesting(){
         this.driver = LoginOutlineHooks.driver;
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         extentTest = LoginOutlineHooks.extentTest;
     }
-//    @When("Test002 Validasi website")
-//    public void test002_validasi_website(){
-//        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-//        String HomePageValidation = homePage.homePageValidation();
-//        Assert.assertEquals(HomePageValidation,"\n" +
-//                "      PRODUCT STORE");
-//    }
     @And("Test002 Click Button Log In")
     public void test002_click_button_log_in(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
@@ -68,8 +59,8 @@ public class LoginTesting {
     }
     @And("^Test002 Input TextField (.*) Yang Valid One")
     public void test002_input_textfield_username_yang_valid_one(String username){
-        userName = String.valueOf(r.nextLong(10000000000000L,99999999999999L));
-        loginPage.setTxtUsername(userName);
+        String Username = Constants.UserData.getUsername();
+        loginPage.setTxtUsername(Username);
         extentTest.log(LogStatus.PASS, "Test002 Input TextField <username> Yang Valid One");
     }
     @And("^Test002 Input TextField (.*) Yang Valid Two")

@@ -43,7 +43,7 @@ public class SignUpTesting {
 
     private DataGenerator dataGenerator = new DataGenerator();
     private Random r = new Random();
-    public String userName;
+    public String usernameInput;
 
     public SignUpTesting(){
         this.driver = LoginOutlineHooks.driver;
@@ -72,8 +72,9 @@ public class SignUpTesting {
     }
     @And("^Test001 Input TextField (.*) Yang Valid One")
     public void test001_input_textfield_username_yang_valid_one(String username){
-        userName = String.valueOf(r.nextLong(10000000000000L,99999999999999L));
-        signUpPage.setTxtUsername(userName);
+        usernameInput = String.valueOf(r.nextLong(10000000000000L,99999999999999L));
+        Constants.UserData.setUsername(usernameInput);;
+        signUpPage.setTxtUsername(usernameInput);
         extentTest.log(LogStatus.PASS, "Test001 Input TextField <username> Yang Valid One");
     }
     @And("^Test001 Input TextField (.*) Yang Valid Two")
