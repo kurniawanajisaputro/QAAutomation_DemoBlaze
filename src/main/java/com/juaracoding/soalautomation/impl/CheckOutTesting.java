@@ -7,6 +7,101 @@ Created on 31/10/2024 2:53
 @Last Modified 31/10/2024 2:53
 Version 1.0
 */
-
+import com.juaracoding.soalautomation.connection.Constants;
+import com.juaracoding.soalautomation.page.SignUpPage;
+import com.juaracoding.soalautomation.page.CartPage;
+import com.juaracoding.soalautomation.page.CheckoutPage;
+import com.juaracoding.soalautomation.page.LoginPage;
+import com.juaracoding.soalautomation.page.ItemPage;
+import com.juaracoding.soalautomation.page.HomePage;
+import com.juaracoding.soalautomation.util.GlobalFunction;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en_scouse.An;
+import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 public class CheckOutTesting {
+    public WebDriver driver;
+    private static ExtentTest extentTest;
+    private CartPage cartPage;
+    private CheckoutPage checkoutPage;
+    private HomePage homePage;
+    private ItemPage itemPage;
+    private LoginPage loginPage;
+    private SignUpPage signUpPage;
+
+    public CheckOutTesting(){
+        this.driver = LoginOutlineHooks.driver;
+        homePage = new HomePage(driver);
+        checkoutPage = new CheckoutPage(driver);
+        extentTest = LoginOutlineHooks.extentTest;
+    }
+
+    @When("Test007 Validasi CheckOut Page")
+    public void test007_validasi_checkout_page(){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        String CheckOutPageValidation = checkoutPage.CheckOutPageValidation();
+        Assert.assertEquals(CheckOutPageValidation,"Place order");
+    }
+    @And("^Test007 Input TextField (.*) Yang Valid One")
+    public void test007_input_textfield_username_yang_valid_one(String name){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.SetTxtinputName(name);
+        extentTest.log(LogStatus.PASS, "Test001 Input TextField <username> Yang Valid One");
+    }
+    @And("^Test007 Input TextField (.*) Yang Valid Two")
+    public void test007_input_textfield_password_yang_valid_two(String country){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.SetTxtinputCountry(country);
+        extentTest.log(LogStatus.PASS, "Test007 Input TextField <password> Yang Valid One");
+    }
+    @And("^Test007 Input TextField (.*) Yang Valid Three")
+    public void test007_input_textfield_password_yang_valid_three(String city){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.SetTxtinputCity(city);
+        extentTest.log(LogStatus.PASS, "Test007 Input TextField <city> Yang Valid One");
+    }
+    @And("^Test007 Input TextField (.*) Yang Valid Four")
+    public void test007_input_textfield_password_yang_valid_four(String creditcard){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.SetTxtinputCard(creditcard);
+        extentTest.log(LogStatus.PASS, "Test007 Input TextField <creditcard> Yang Valid One");
+    }
+    @And("^Test007 Input TextField (.*) Yang Valid Five")
+    public void test007_input_textfield_password_yang_valid_five(String month){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.SetTxtinputMonth(month);
+        extentTest.log(LogStatus.PASS, "Test007 Input TextField <creditcard> Yang Valid One");
+    }
+    @And("^Test007 Input TextField (.*) Yang Valid Six")
+    public void test007_input_textfield_password_yang_valid_six(String year){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.SetTxtinputYear(year);
+        extentTest.log(LogStatus.PASS, "Test007 Input TextField <creditcard> Yang Valid One");
+    }
+    @And("Test007 Click Button purchase")
+    public void test007_click_button_purchase(){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        checkoutPage.SetBtnPurchase();
+        extentTest.log(LogStatus.PASS, "Test007 Click Button Purchase");
+    }
+    @Then("Test007 Klik Ok Pop Up")
+    public void test007_klik_ok_pop_up() {
+        Alert alert = driver.switchTo().alert();
+
+        // Mendapatkan teks dari popup (opsional)
+        String alertText = alert.getText();
+        System.out.println("Popup text: " + alertText);
+
+        // Mengklik tombol "OK" pada popup
+        alert.accept();
+
+        extentTest.log(LogStatus.PASS, "Thank you for your purchase!");
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+    }
 }

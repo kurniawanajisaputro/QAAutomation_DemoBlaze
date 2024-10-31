@@ -31,7 +31,7 @@ public class LoginPage {
     private WebElement txtFieldPassword;
 
     @FindBy(css = "btn btn-primary")
-    private WebElement btnSignUp;
+    private WebElement btnLogin;
 
     @FindBy(xpath = "btn btn-secondary")
     private WebElement btnCansel;
@@ -50,7 +50,7 @@ public class LoginPage {
         return logoLoginIn==null?"":logoLoginIn.getText();
     }
 
-    public void inputUsername(String username){
+    public void setTxtUsername(String username){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
@@ -59,7 +59,7 @@ public class LoginPage {
             System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
         }
     }
-    public void inputPassword(String password){
+    public void setTxtPassword(String password){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
@@ -68,9 +68,9 @@ public class LoginPage {
             System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
         }
     }
-    public void SignUp(){
+    public void Btnlogin(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                .until(ExpectedConditions.visibilityOf(btnSignUp)).click();
+                .until(ExpectedConditions.visibilityOf(btnLogin)).click();
     }
     public void Cancel(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))

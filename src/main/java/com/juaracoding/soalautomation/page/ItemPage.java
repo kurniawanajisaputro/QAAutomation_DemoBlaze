@@ -21,12 +21,15 @@ public class ItemPage {
     private WebDriver driver;
 
     @FindBy(xpath = "//h2[@class='name']")
-    private WebElement logoCartPage;
+    private WebElement logoItemPage;
 
     @FindBy(xpath = "//a[@class='btn btn-success btn-lg']")
     private WebElement btnAddtoCart;
     @FindBy(xpath = "//li[@class='nav-item active']//a[@class='nav-link']")
     private WebElement btnHome;
+
+    @FindBy(xpath = "//a[@id='cartur']")
+    private WebElement btnCart;
 
 
 
@@ -41,15 +44,19 @@ public class ItemPage {
     }
 
     public String ItemPageValidation(){
-        return logoCartPage==null?"":logoCartPage.getText();
+        return logoItemPage==null?"":logoItemPage.getText();
     }
 
-    public void AddtoCart(){
+    public void SetBtnAddtoCart(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnAddtoCart)).click();
     }
-    public void Home(){
+    public void SetBtnHome(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnHome)).click();
+    }
+    public void SetBtnCart(){
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                .until(ExpectedConditions.visibilityOf(btnCart)).click();
     }
 }

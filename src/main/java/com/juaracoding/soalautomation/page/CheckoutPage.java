@@ -66,7 +66,7 @@ public class CheckoutPage {
         return Placeorder==null?"":Placeorder.getText();
     }
 
-    public void inputName(String name){
+    public void SetTxtinputName(String name){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
@@ -75,7 +75,7 @@ public class CheckoutPage {
             System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
         }
     }
-    public void inputCountry(String country){
+    public void SetTxtinputCountry(String country){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
@@ -84,7 +84,7 @@ public class CheckoutPage {
             System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
         }
     }
-    public void inputCity(String city){
+    public void SetTxtinputCity(String city){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
@@ -93,7 +93,7 @@ public class CheckoutPage {
             System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
         }
     }
-    public void inputCard(String card){
+    public void SetTxtinputCard(String card){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
@@ -102,7 +102,7 @@ public class CheckoutPage {
             System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
         }
     }
-    public void inputMonth(String month){
+    public void SetTxtinputMonth(String month){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
@@ -111,7 +111,7 @@ public class CheckoutPage {
             System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
         }
     }
-    public void inputYear(String year){
+    public void SetTxtinputYear(String year){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
@@ -120,7 +120,7 @@ public class CheckoutPage {
             System.out.println("Komponen Text Field Username Tidak Ditemukan !!");
         }
     }
-    public void Purchase(){
+    public void SetBtnPurchase(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnPurchase)).click();
     }

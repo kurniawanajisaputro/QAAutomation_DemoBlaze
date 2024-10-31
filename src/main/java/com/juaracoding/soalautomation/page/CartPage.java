@@ -43,7 +43,7 @@ public class CartPage {
         return logoCartPage==null?"":logoCartPage.getText();
     }
 
-    public void placeorder(){
+    public void SetBtnPlaceorder(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnPlaceOrder)).click();
     }

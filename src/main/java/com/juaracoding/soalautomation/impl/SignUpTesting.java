@@ -80,13 +80,13 @@ public class SignUpTesting {
     @And("Test001 Click Button SignUp Form")
     public void test001_click_button_signup(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-        signUpPage.BtnSignUp();
+        signUpPage.BtnsignUp();
         extentTest.log(LogStatus.PASS, "Test001 Click Button SignUp");
     }
     @Then("Test001 Validasi website")
     public void test001_validasi_website(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-        String SignUpValidation = signUpPage.SignUpValidation();
-        Assert.assertEquals(SignUpValidation,"nava");
+        String HomePageValidation = homePage.homePageValidation();
+        Assert.assertEquals(HomePageValidation,"nava");
     }
 }

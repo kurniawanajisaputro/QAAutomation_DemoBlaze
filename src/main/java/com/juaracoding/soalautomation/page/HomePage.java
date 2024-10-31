@@ -69,15 +69,15 @@ public class HomePage {
     }public void setBtncart(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnCart)).click();
-    }public void samsunggalaxys6(){
+    }public void setBtnSamsunggalaxys6(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnSamsungGalaxyS6)).click();
     }
-    public void nokialumia1520(){
+    public void setBtnNokialumia1520(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnNokiaLumia1520)).click();
     }
-    public void nexus6(){
+    public void SetBtnNexus6(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnNexus6)).click();
     }

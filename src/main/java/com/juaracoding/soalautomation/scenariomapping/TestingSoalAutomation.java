@@ -9,8 +9,8 @@ Version 1.0
 */
 
 public enum TestingSoalAutomation {
-    T1("Test001 Valid Signup Username (User)");
-
+    T1("Test001 Sign Up Website (user)"),
+    T2("Test002 Log In Website (user)");
     private String testName;
 
     private TestingSoalAutomation(String value) {

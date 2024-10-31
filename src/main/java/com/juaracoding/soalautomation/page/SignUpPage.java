@@ -69,7 +69,7 @@ public class SignUpPage {
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                     .until(ExpectedConditions.visibilityOf(txtFieldPassword)).sendKeys(password);
     }
-    public void BtnSignUp(){
+    public void BtnsignUp(){
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(btnSignUp)).click();
     }
