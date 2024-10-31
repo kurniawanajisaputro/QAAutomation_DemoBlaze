@@ -40,34 +40,13 @@ public class LoginTesting {
         loginPage = new LoginPage(driver);
         extentTest = LoginOutlineHooks.extentTest;
     }
-    @And("Test002 Pop Out Sign Up Berhasil")
-    public void test002_pop_out_sign_up_berhasil(){
-//        Alert alert = driver.switchTo().alert();
-//
-//        // Mendapatkan teks dari popup (opsional)
-//        String alertText = alert.getText();
-//        System.out.println("Popup text: " + alertText);
-//        // Mengklik tombol "OK" pada popup
-//        alert.accept();
-//        extentTest.log(LogStatus.PASS, "Sign Up Succesful");
+//    @When("Test002 Validasi website")
+//    public void test002_validasi_website(){
 //        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-        try {
-            Alert alert = driver.switchTo().alert();
-            String alertText = alert.getText();
-            System.out.println("Popup text: " + alertText);
-            alert.accept();
-            extentTest.log(LogStatus.PASS, "Sign Up Successful");
-            GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-        } catch (NoAlertPresentException e) {
-            System.out.println("No alert found: " + e.getMessage());
-        }
-    }
-    @When("Test002 Validasi website")
-    public void test002_validasi_website(){
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-        String HomePageValidation = homePage.homePageValidation();
-        Assert.assertEquals(HomePageValidation,"nava");
-    }
+//        String HomePageValidation = homePage.homePageValidation();
+//        Assert.assertEquals(HomePageValidation,"\n" +
+//                "      PRODUCT STORE");
+//    }
     @And("Test002 Click Button Log In")
     public void test002_click_button_log_in(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
@@ -82,13 +61,11 @@ public class LoginTesting {
     }
     @And("^Test002 Input TextField (.*) Yang Valid One")
     public void test002_input_textfield_username_yang_valid_one(String username){
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         loginPage.setTxtUsername(username);
         extentTest.log(LogStatus.PASS, "Test002 Input TextField <username> Yang Valid One");
     }
     @And("^Test002 Input TextField (.*) Yang Valid Two")
     public void test002_input_textfield_password_yang_valid_one(String password){
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         loginPage.setTxtPassword(password);
         extentTest.log(LogStatus.PASS, "Test002 Input TextField <password> Yang Valid One");
     }

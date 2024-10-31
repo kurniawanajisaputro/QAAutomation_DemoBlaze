@@ -85,32 +85,16 @@ public class SignUpTesting {
         signUpPage.BtnsignUp();
         extentTest.log(LogStatus.PASS, "Test001 Click Button SignUp");
     }
-//    @And("Test001 Pop Out Sign Up Berhasil")
-//    public void test001_pop_out_sign_up_berhasil(){
-////        Alert alert = driver.switchTo().alert();
-////
-////        // Mendapatkan teks dari popup (opsional)
-////        String alertText = alert.getText();
-////        System.out.println("Popup text: " + alertText);
-////        // Mengklik tombol "OK" pada popup
-////        alert.accept();
-////        extentTest.log(LogStatus.PASS, "Sign Up Succesful");
-////        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-//        try {
-//            Alert alert = driver.switchTo().alert();
-//            String alertText = alert.getText();
-//            System.out.println("Popup text: " + alertText);
-//            alert.accept();
-//            extentTest.log(LogStatus.PASS, "Sign Up Successful");
-//            GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-//        } catch (NoAlertPresentException e) {
-//            System.out.println("No alert found: " + e.getMessage());
-//        }
-//    }
+    @And("Test001 Pop Out Sign Up Berhasil")
+    public void test001_pop_out_sign_up_berhasil(){
+        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        driver.switchTo().alert().accept();
+    }
     @Then("Test001 Validasi website")
     public void test001_validasi_website(){
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String HomePageValidation = homePage.homePageValidation();
-        Assert.assertEquals(HomePageValidation,"nava");
+        Assert.assertEquals(HomePageValidation,"\n" +
+                "      PRODUCT STORE");
     }
 }

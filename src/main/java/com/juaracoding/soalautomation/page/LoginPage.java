@@ -24,10 +24,10 @@ public class LoginPage {
     @FindBy(id = "signInModalLabel")
     private WebElement logoLoginIn;
 
-    @FindBy(id = "sign-username")
+    @FindBy(id = "loginusername")
     private WebElement txtFieldUsername;
 
-    @FindBy(id = "sign-password")
+    @FindBy(id = "loginpassword")
     private WebElement txtFieldPassword;
 
     @FindBy(xpath = "//button[@onclick='login()']")
