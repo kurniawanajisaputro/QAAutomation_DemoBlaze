@@ -1,6 +1,6 @@
 <h1 align="center" id="title">QA Automation pada web Demoblaze</h1>
 
-<p align="center"><img src="https://socialify.git.ci/kurniawanajisaputro/Soal_Tes_Automation_PT.Akhdani-Reka-Solusi/image?font=Inter&language=1&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/kurniawanajisaputro/QAAutomation_DemoBlaze/image?font=KoHo&language=1&name=1&owner=1&pattern=Floating%20Cogs&stargazers=1&theme=Dark" alt="project-image"></p>
 
 <p id="description">WEB UI Automation Testing Website Demoblaze</p>
 
