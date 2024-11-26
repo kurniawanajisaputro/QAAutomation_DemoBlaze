@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Soal Test Automation PT.Akhdani-Raka-Solusi</h1>
+<h1 align="center" id="title">QA Automation pada web Demoblaze</h1>
 
 <p align="center"><img src="https://socialify.git.ci/kurniawanajisaputro/Soal_Tes_Automation_PT.Akhdani-Reka-Solusi/image?font=Inter&language=1&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark" alt="project-image"></p>
 
